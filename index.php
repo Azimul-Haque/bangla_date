@@ -13,6 +13,10 @@
  * print_r($output);
  */
 
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+// testing
 header('content-type: application/json; charset=utf-8');
 
 $mydate = (object) null;
@@ -22,6 +26,18 @@ $mydate->bn_date = bangla_date(date('Y-m-d H:i:s'));
 $myJSON = json_encode($mydate);
 
 echo $myJSON;
+
+function bangla_date($date) {
+    $bn = new BanglaDate(strtotime($date));
+
+    $output = $bn->get_date();
+
+    return $output[1] . ' ' . $output[0]  . ', ' . $output[2] . ' বঙ্গাব্দ';
+}
+// testing
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 
 class BanglaDate {
     private $timestamp; //timestamp as input
@@ -136,12 +152,4 @@ class BanglaDate {
     function get_date() {
         return array($this->bangDate, $this->bangMonth, $this->bangYear);
     }
-}
-
-function bangla_date($date) {
-    $bn = new BanglaDate(strtotime($date));
-
-    $output = $bn->get_date();
-
-    return $output[1] . ' ' . $output[0]  . ', ' . $output[2] . ' বঙ্গাব্দ';
 }
