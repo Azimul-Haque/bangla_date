@@ -18,7 +18,13 @@ $mydate->bn_date = bangla_date(date('Y-m-d H:i:s'));
 
 $myJSON = json_encode($mydate);
 
-echo $myJSON;
+echo 'Encoded: ' . $myJSON;
+
+echo "\r\n";
+echo "\r\n";
+
+echo 'Decoded: ' . $mydate->bn_date;
+
 
 function bangla_date($date) {
     $bn = new BanglaDate(strtotime($date));
