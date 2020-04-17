@@ -2,7 +2,7 @@
 /*
  * Bangla_Date - English to Bangla date converter
  * @package BanglaDate
- * @modified and updated accoding to the Bangla Academy A. H. M. Azimul Haque
+ * @modified and updated accoding to the Bangla Academy by A. H. M. Azimul Haque
  * @main author Tareq Hasan
  * @copyright 2020 A. H. M. Azimul Haque
  *
