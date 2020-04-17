@@ -5,13 +5,10 @@
  * @modified and updated accoding to the Bangla Academy by A. H. M. Azimul Haque
  * @main author Tareq Hasan
  * @copyright 2020 A. H. M. Azimul Haque
+ * @url https://orbachinujbuk.com/bangla_date/test.php
  *
- *
- *
- * Get Output
- * $output = $bn->get_date();
- * print_r($output);
  */
+
 include('dateClass.php');
 header('content-type: application/json; charset=utf-8');
 
