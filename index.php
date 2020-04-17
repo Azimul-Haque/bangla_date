@@ -13,7 +13,7 @@
  * print_r($output);
  */
 
-echo bangla_date(date('d-m-Y'));
+echo bangla_date(date('2020-05-14 07:46:01'));
 
 class BanglaDate {
     private $timestamp; //timestamp as input
@@ -27,7 +27,7 @@ class BanglaDate {
     private $bangYear; //generated Bangla   Year
     private $bn_months = array("পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র", "বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", "কার্তিক", "অগ্রহায়ণ");
     private $bn_month_dates = array(30,30,29,30,31,31,31,31,31,31,30,30);
-	private $bn_month_middate = array(15,14,13,14,13,14,14,15,15,15,16,15);	
+	private $bn_month_middate = array(14,13,14,13,14,14,15,15,15,16,15,15);	
 	private $lipyearindex = 3;
     /*
      * Set the initial date and time
