@@ -13,7 +13,15 @@
  * print_r($output);
  */
 
-echo bangla_date(date('Y-m-d H:i:s'));
+header('content-type: application/json; charset=utf-8');
+
+$mydate = (object) null;
+$mydate->en_date = date('Y-m-d H:i:s');
+$mydate->bn_date = bangla_date(date('Y-m-d H:i:s'));
+
+$myJSON = json_encode($mydate);
+
+echo $myJSON;
 
 class BanglaDate {
     private $timestamp; //timestamp as input
