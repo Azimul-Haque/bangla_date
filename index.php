@@ -1,4 +1,25 @@
 <?php
+/*
+ * Bangla_Date - English to Bangla date converter
+ * @package BanglaDate
+ * @modified and updated accoding to the Bangla Academy A. H. M. Azimul Haque
+ * @main author Tareq Hasan
+ * @copyright 2020 A. H. M. Azimul Haque
+ *
+ *
+ * Example of Use:
+ *
+ * Initialize/set the time:
+ * $bn = new BanglaDate(strtotime('18-03-1988'), 0);
+ * or
+ * $bn = new BanglaDate(time(), 6);
+ * or
+ * $bn = new BanglaDate(time());
+ *
+ * Get Output
+ * $output = $bn->get_date();
+ * print_r($output);
+ */
 
 echo bangla_date(date('15-10-2020'));
 
