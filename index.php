@@ -13,7 +13,7 @@
  * print_r($output);
  */
 
-echo bangla_date(date('2020-11-15 06:46:01'));
+echo bangla_date(date('2020-02-29 06:46:01'));
 
 class BanglaDate {
     private $timestamp; //timestamp as input
