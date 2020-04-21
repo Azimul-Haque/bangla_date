@@ -6,7 +6,7 @@
  * @main author Tareq Hasan
  * @copyright 2020 A. H. M. Azimul Haque
  * @url https://orbachinujbuk.com/bangla_date/test.php
- *
+ * @ Update at April 21, 2020
  */
 
 class BanglaDate {
